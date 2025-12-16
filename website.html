@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern HTML Website</title>
+    <style>
+        /* Minimal inline CSS for basic presentation */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+        }
+        nav a:hover {
+            background-color: #4a6285;
+            border-radius: 4px;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            background-color: #f0f8ff;
+        }
+        .image-placeholder {
+            background-color: #ecf0f1;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin: 1rem 0;
+            color: #7f8c8d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0 1rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My HTML Website</h1>
+        <p>A clean, modern website built with pure HTML</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <main>
+        <section class="hero" id="home">
+            <h1>Welcome to Our Website</h1>
+            <p>This is a simple, responsive website built using only HTML with minimal inline CSS for presentation.</p>
+            <button onclick="alert('Welcome! This is a basic HTML site.')">Learn More</button>
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a company dedicated to creating beautiful, functional websites using web standards. Our focus is on clean code and user-friendly design.</p>
+            
+            <div class="image-placeholder">
+                [Company Image]
+            </div>
+            
+            <h3>Our Mission</h3>
+            <p>To provide high-quality web solutions that help businesses establish a strong online presence.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Web Design</h3>
+                    <p>Creating visually appealing and user-friendly website designs that work across all devices.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>HTML Development</h3>
+                    <p>Building clean, semantic HTML structures that form the foundation of great websites.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Website Maintenance</h3>
+                    <p>Keeping your website up-to-date and running smoothly with regular updates and support.</p>
+                </div>
+            </div>
+            
+            <h3>Service Pricing</h3>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Basic Website</td>
+                    <td>Simple 5-page website with responsive design</td>
+                    <td>$499</td>
+                </tr>
+                <tr>
+                    <td>Business Website</td>
+                    <td>10-page website with contact form and gallery</td>
+                    <td>$899</td>
+                </tr>
+                <tr>
+                    <td>E-commerce Site</td>
+                    <td>Online store with product catalog and checkout</td>
+                    <td>$1,499</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <p>Here are some examples of our recent work:</p>
+            
+            <div class="image-placeholder">
+                [Project 1 - E-commerce Website]
+            </div>
+            <h3>Online Store</h3>
+            <p>A fully responsive e-commerce website with product filtering and cart functionality.</p>
+            
+            <div class="image-placeholder">
+                [Project 2 - Business Website]
+            </div>
+            <h3>Corporate Website</h3>
+            <p>A professional business website with about page, services, and contact form.</p>
+            
+            <div class="image-placeholder">
+                [Project 3 - Blog Platform]
+            </div>
+            <h3>Blog Platform</h3>
+            <p>A content management system for blogging with categories and search functionality.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <form onsubmit="alert('Thank you for your message! This is a demo form.'); return false;">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="service">Service Interested In:</label>
+                <select id="service" name="service">
+                    <option value="web-design">Web Design</option>
+                    <option value="html-dev">HTML Development</option>
+                    <option value="maintenance">Website Maintenance</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My HTML Website. All rights reserved.</p>
+        <p>123 Web Street, Internet City | Phone: (123) 456-7890 | Email: info@htmlwebsite.com</p>
+        <p>
+            <a href="#home" style="color: #3498db;">Home</a> | 
+            <a href="#about" style="color: #3498db;">About</a> | 
+            <a href="#contact" style="color: #3498db;">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
